@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h3 class="text-white text-center py-3">R Schools</h3>
+    <a href="dashboard.html">🏠 Dashboard</a>
+    <a href="student.html" class="active">👨‍🎓 Students</a>
+    <a href="teachers.html">👩‍🏫 Teachers</a>
+    <a href="index.html">🚪 Logout</a>
+  </div>
+
+  <div class="content">
+    <h2 class="mb-4">👨‍🎓 Student Management</h2>
+
+    <!-- Add Student Form -->
+    <form class="mb-4">
+      <input type="text" placeholder="Student Name" class="form-control mb-2" required>
+      <input type="text" placeholder="Class" class="form-control mb-2" required>
+      <input type="text" placeholder="Roll Number" class="form-control mb-2" required>
+      <button class="btn btn-success">Add Student</button>
+    </form>
+
+    <!-- Dummy Table -->
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Roll No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ali</td>
+          <td>10th</td>
+          <td>001</td>
+        </tr>
+        <tr>
+          <td>Ayesha</td>
+          <td>9th</td>
+          <td>002</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* General body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+/* Login Page */
+.login-body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100vh;
+  width: 220px;
+  background: #343a40;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #495057;
+  border-left: 5px solid #0d6efd;
+}
+
+/* Content area */
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  animation: slideIn 0.7s ease-in-out;
+}
+
+/* Card Animation */
+.animate-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.animate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
